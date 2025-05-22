@@ -1,4 +1,4 @@
-// app/page.tsx
+import homepageImage from "../../public/imageWithoutOrangeLinehorizontal2.png"
 
 export const metadata = {
    title: 'Driftless Robotics Drones | Next-Gen Aerial Solutions',
@@ -10,7 +10,7 @@ export default function Home() {
       <main className="min-h-screen">
          {/* Hero Section */}
          <section className="relative bg-black">
-            <div className="absolute inset-0 bg-[url('/imageWithoutOrangeLineHorizontal2.png')] bg-cover bg-center opacity-90" />
+            <div className="absolute inset-0 bg-cover bg-center opacity-90" style={{backgroundImage: `url(${homepageImage.src})`}}/>
             <div className="relative max-w-7xl mx-auto px-6 py-60 flex flex-col items-center text-center">
                <h1 className="text-5xl font-bold text-white mb-6">Revolutionize the Sky</h1>
                <p className="text-lg text-white mb-8">
