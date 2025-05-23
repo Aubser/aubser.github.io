@@ -8,7 +8,7 @@ export default function Header() {
    const [menuOpen, setMenuOpen] = useState(false);
 
    return (
-      <header className="shadow" style={{backgroundColor: '#199a48'}}>
+      <header className="shadow" style={{backgroundColor: '#FFFFFF'}}>
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center py-2">
                <div className="text-2xl font-bold">
@@ -16,9 +16,9 @@ export default function Header() {
                      <img src="/logoHorizontal-removebg-preview.png" alt="Explore Our Drones" className='h-16'/>
                   </Link>
                </div>
-               <nav className="hidden md:flex space-x-8 text-white font-medium">
-                  <Link href="/" className = "hover:text-green-200">Home</Link>
-                  <Link href="/contact" className = "hover:text-green-200">Contact</Link>
+               <nav className="hidden md:flex space-x-8 text-black font-medium">
+                  <Link href="/" className = "hover:text-[#199a48]">Home</Link>
+                  <Link href="/contact" className = "hover:text-[#199a48]">Contact</Link>
                </nav>
                <div className="md:hidden">
                   <button
