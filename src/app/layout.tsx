@@ -3,14 +3,17 @@ import './globals.css';
 import Header from '@/components/header';
 
 export const metadata = {
-  title: 'SkyTech Drones',
-  description: 'Advanced aerial technology for the future.',
+   title: 'Driftless Robotics',
+   description: 'Cutting-edge drones for industry, security, and exploration.',
+   icons: {
+    icon: '/dImageSquare.ico',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className='no-scrollbar'>
+      <body className='flex flex-col min-h-screen no-scrollbar'>
         <Header />
         {children}
       </body>

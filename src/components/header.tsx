@@ -8,18 +8,17 @@ export default function Header() {
    const [menuOpen, setMenuOpen] = useState(false);
 
    return (
-      <header className="bg-white shadow">
+      <header className="shadow" style={{backgroundColor: '#199a48'}}>
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center py-2">
-               <div className="text-2xl font-bold text-blue-600">
+               <div className="text-2xl font-bold">
                   <Link href="/">
                      <img src="/logoHorizontal-removebg-preview.png" alt="Explore Our Drones" className='h-16'/>
                   </Link>
                </div>
-               <nav className="hidden md:flex space-x-8 text-gray-700 font-medium">
-                  <Link href="/">Home</Link>
-                  <Link href="/about">About</Link>
-                  <Link href="/contact">Contact</Link>
+               <nav className="hidden md:flex space-x-8 text-white font-medium">
+                  <Link href="/" className = "hover:text-green-200">Home</Link>
+                  <Link href="/contact" className = "hover:text-green-200">Contact</Link>
                </nav>
                <div className="md:hidden">
                   <button
@@ -45,7 +44,6 @@ export default function Header() {
          {menuOpen && (
             <div className="md:hidden bg-white shadow-md px-4 pb-4 space-y-2">
                <Link href="/" className="block text-gray-700">Home</Link>
-               <Link href="/about" className="block text-gray-700">About</Link>
                <Link href="/contact" className="block text-gray-700">Contact</Link>
             </div>
          )}
