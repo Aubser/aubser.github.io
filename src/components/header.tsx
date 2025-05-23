@@ -10,13 +10,13 @@ export default function Header() {
    return (
       <header className="shadow" style={{backgroundColor: '#FFFFFF'}}>
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center py-2">
+            <div className="flex justify-between items-center">
                <div className="text-2xl font-bold">
                   <Link href="/">
-                     <img src="/logoHorizontal-removebg-preview.png" alt="Explore Our Drones" className='h-16'/>
+                     <img src="/logoHorizontal-removebg-preview.png" alt="Explore Our Drones" className='h-auto sm:h-24'/>
                   </Link>
                </div>
-               <nav className="hidden md:flex space-x-8 text-black font-medium">
+               <nav className="hidden md:flex space-x-8 text-black text-xl">
                   <Link href="/" className = "hover:text-[#199a48]">Home</Link>
                   <Link href="/contact" className = "hover:text-[#199a48]">Contact</Link>
                </nav>
