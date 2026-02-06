@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import DropdownLink from './DropdownLink';
-import { menuItems } from '@/utils/menuData';
+import { menuItems } from '../../utils/menuData';
 import MobileNavItem from './MobileNav';
 import Logo from '../Logo';
 

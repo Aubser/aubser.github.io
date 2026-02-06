@@ -1,6 +1,6 @@
 // app/layout.tsx
 import './globals.css';
-import Header from '@/components/Header/header';
+import Header from '../components/Header/header';
 
 export const metadata = {
    title: 'Driftless Robotics',

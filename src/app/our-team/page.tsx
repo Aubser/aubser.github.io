@@ -1,6 +1,5 @@
 import SplitSection from "../../components/SplitSection";
 import ValueBlocks from "../../components/ValueBlocks/ValueBlocks";
-import TeamValue from "../../components/ValueBlocks/ValueBlocks";
 import { TEAM_VALUES, TEAM_VALUES_TITLE } from "../../utils/teamValues";
 import Head from "next/head";
 import Image from "next/image";

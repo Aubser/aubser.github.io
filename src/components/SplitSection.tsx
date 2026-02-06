@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useRef } from "react";
-import { useIsVisible } from "@/hooks/useIsVisible";
+import { useIsVisible } from "../hooks/useIsVisible";
 
 type Direction = "up" | "down" | "left" | "right";
 

@@ -1,6 +1,6 @@
-import ContentBoxes from "@/components/ContentBoxes/contentBoxes";
+import ContentBoxes from "../components/ContentBoxes/contentBoxes";
 import homepageImage from "../../public/HomePageResources/GreenPlanetHighQual.jpg"
-import FeaturesHorizontalBoxes from "@/components/FeaturesHorizontalBoxes/featuresHorizontalBoxes";
+import FeaturesHorizontalBoxes from "../components/FeaturesHorizontalBoxes/featuresHorizontalBoxes";
 import Image from "next/image";
 
 export default function Home() {

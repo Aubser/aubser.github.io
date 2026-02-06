@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  nextjs-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: driftless_robotics_website
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    restart: unless-stopped
+    networks:
+      - nginxproxy_WebApp-network
+
+networks:
+  nginxproxy_WebApp-network:
+    external: true

@@ -1,4 +1,4 @@
-import { ValueNode } from "@/components/ValueBlocks/ValueBlocks";
+import { ValueNode } from "../components/ValueBlocks/ValueBlocks";
 
 export const TEAM_VALUES_TITLE = "Team Values";
 
