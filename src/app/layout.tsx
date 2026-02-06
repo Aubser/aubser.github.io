@@ -1,12 +1,12 @@
 // app/layout.tsx
 import './globals.css';
-import Header from '@/components/header';
+import Header from '@/components/Header/header';
 
 export const metadata = {
    title: 'Driftless Robotics',
    description: 'Cutting-edge drones for industry, security, and exploration.',
    icons: {
-    icon: '/dImageSquare.ico',
+    icon: '/logo.png',
   },
 };
 

@@ -9,7 +9,7 @@ export default function Contact() {
                We’d love to hear from you! Whether you have a question, a suggestion, or just want to say hello, feel free to reach out!
             </p>
             <div className="text-center mt-12 text-gray-400">
-               Email us at <span style={{ color: '#199a48' }}>attiga@driftlessrobotics.com</span>
+               Email us at <span style={{ color: '#199a48' }}>Austin.Attig@driftlessrobotics.com</span>
             </div>
          </div>
       </main>

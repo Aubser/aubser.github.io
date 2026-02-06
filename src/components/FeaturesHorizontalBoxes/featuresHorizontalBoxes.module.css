@@ -1,0 +1,23 @@
+.box {
+   position: relative;
+   background-color: #f9fafb;
+   padding: 24px;
+   border-radius: 8px;
+   box-shadow: 0 4px 15px rgba(25, 154, 72, 0.4);
+}
+
+.boxImage {
+   border-radius: 9999px;
+   object-fit: cover;
+   width: 12.5rem;
+   height: 12.5rem;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 1rem;
+}
+
+.boxHeader {
+   font-size: 1.25rem;
+   font-weight: 600;
+   margin-bottom: 0.5rem;
+}

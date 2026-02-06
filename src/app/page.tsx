@@ -1,17 +1,26 @@
-import ContentBoxes from "@/components/contentBoxes";
-import homepageImage from "../../public/imageWithoutOrangeLinehorizontal2.png"
-import FeaturesHorizontalBoxes from "@/components/featuresHorizontalBoxes";
+import ContentBoxes from "@/components/ContentBoxes/contentBoxes";
+import homepageImage from "../../public/HomePageResources/GreenPlanetHighQual.jpg"
+import FeaturesHorizontalBoxes from "@/components/FeaturesHorizontalBoxes/featuresHorizontalBoxes";
+import Image from "next/image";
 
 export default function Home() {
    return (
       <main className="min-h-screen">
          {/* Hero Section */}
-         <section className="relative bg-black">
-            <div className="absolute inset-0 bg-cover bg-center opacity-90" style={{backgroundImage: `url(${homepageImage.src})`}}/>
+         <section className="relative h-[700px] bg-black">
+            <div className="absolute inset-0 overflow-hidden">
+              <Image
+                src={homepageImage}
+                alt=""
+                fill
+                priority
+                className="object-cover object-center opacity-90"
+              />
+            </div>
             <div className="relative max-w-7xl mx-auto px-6 py-70 flex flex-col items-center text-center">
-               <h1 className="text-5xl font-bold text-white mb-6">Revolutionize the Sky</h1>
-               <p className="text-lg text-white mb-8">
-                  Driftless Robotics Drones delivers precision, performance, and reliability for commercial and industrial applications.
+               <h1 className="text-5xl font-bold text-white mb-10 drop-shadow-lg" style={{ fontSize: "60px" }}>Revolutionize the Sky</h1>
+               <p className="text-lg text-white/95 drop-shadow-lg" style={{ fontSize: "24px" }}>
+                  Driftless Robotics Drones delivers precision, performance, and reliability.
                </p>
             </div>
          </section>
