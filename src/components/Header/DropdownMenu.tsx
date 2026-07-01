@@ -24,7 +24,7 @@ export default function DropdownMenu({
     <div
       className={`
         ${isMobile ? 'relative w-full ml-6' : 'absolute top-full left-0 w-64'}
-        bg-white
+      bg-white dark:bg-gray-800
         ${isMobile ? '' : 'border border-gray-300 rounded-tr-md rounded-b shadow-lg'}
         z-20
         transition-all duration-300 ease-out origin-top
@@ -37,7 +37,7 @@ export default function DropdownMenu({
           key={idx}
           href={item.href}
           onClick={onNavigate}
-          className="block px-4 py-2 text-gray-700 hover:text-green-500 transition-colors"
+          className="block px-4 py-2 hover:text-green-500 transition-colors"
         >
           {item.label}
         </Link>

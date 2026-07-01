@@ -8,15 +8,15 @@ export default function MissionAndVision() {
    return (
       <>
          <Head>
-            <title>Mission And Vision | SkyTech Drones</title>
+            <title>Mission And Vision | Driftless Robotics</title>
             <meta
                name="description"
-               content="Learn more about SkyTech Drones, our mission, and our commitment to aerial innovation."
+               content="Learn more about Driftless Robotics, our mission, and our commitment to aerial innovation."
             />
          </Head>
 
          <main>
-            <section className="relative bg-black">
+            <section className="relative bg-black z-10">
                <div className="absolute inset-0 overflow-hidden">
                   <Image
                      src="/MissionPageResources/SideSun.jpg"
@@ -34,13 +34,17 @@ export default function MissionAndVision() {
                </div>
             </section>
 
-            <SplitSection
-               title="Revolutionize the World"
-               body="At Driftless Robotics, we harness cutting-edge technology to drive progress and transform industries. Our mission is to create innovative solutions that push the boundaries of what’s possible, empowering people and businesses to achieve new heights. By combining imagination with precision engineering, we are shaping a future where technology expands the limits of human potential and opens doors to extraordinary possibilities."
-               imageSrc="/MissionPageResources/Blueprint.jpg"
-               imageAlt="Revolutionize the World"
-               bgClassName="bg-green-50"
-            />
+            <div className="relative z-10">
+               <SplitSection
+                  title="Revolutionize the World"
+                  body="At Driftless Robotics, we harness cutting-edge technology to drive progress and transform industries. Our mission is to create innovative solutions that push the boundaries of what’s possible, empowering people and businesses to achieve new heights. By combining imagination with precision engineering, we are shaping a future where technology expands the limits of human potential and opens doors to extraordinary possibilities."
+                  imageSrc="/MissionPageResources/Blueprint.jpg"
+                  imageAlt="Revolutionize the World"
+                  bgClassName="bg-green-50"
+                  darkMode="dark:bg-green-900"
+               />
+            </div>
+
 
             <div className="block md:hidden">
                <ImageRevealOverlay
@@ -58,7 +62,7 @@ export default function MissionAndVision() {
                />
             </div>
 
-            <div>
+            <div className="relative z-10">
                <VideoSection
                   title="See New Perspectives"
                   text="Unlock the power of advanced technology to see the world differently. Our solutions let you capture unique perspectives, opening doors to creativity and innovation."

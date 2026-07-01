@@ -8,11 +8,15 @@ type Props = {
   rightTitle: string;
 };
 
+{/* 
+   Need to create stacking context with other elements on same page. Essentially, add relative z-20 to other elements that should 
+   be on top of the image.
+*/ }
 export default function ImageRevealOverlay({ image, leftTitle, rightTitle }: Props) {
   return (
-    <section className="relative h-[75vh] w-full flex md:justify-center items-start pt-20 md:items-center ">
+    <section className="relative h-[75vh] w-full flex md:justify-center items-start pt-20 md:items-center">
       {/* Full-screen fixed background image */}
-      <div className="fixed inset-0 -z-10">
+      <div className="fixed inset-0 z-0">
         <Image
           src={image}
           alt=""
@@ -22,7 +26,7 @@ export default function ImageRevealOverlay({ image, leftTitle, rightTitle }: Pro
           style={{ objectPosition: '50% 80%' }}
         />
       </div>
-
+      
       {/* Sticky container for the overlay section */}
       <div>
         {/* Content grid */}

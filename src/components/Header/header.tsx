@@ -12,7 +12,7 @@ export default function Header() {
    const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
 
    return (
-      <header className="shadow bg-white">
+      <header className="shadow bg-white dark:bg-gray-800 z-20">
          <div className="max-w-7xl mx-auto">
             <div className="flex justify-between items-center h-20 px-4">
 
@@ -20,7 +20,7 @@ export default function Header() {
                <Logo />
 
                {/* Desktop Navigation */}
-               <nav className="hidden md:flex space-x-8 text-black text-xl items-center">
+               <nav className="hidden md:flex space-x-8 text-xl items-center">
                   {menuItems.map((item, idx) =>
                      item.dropdown ? (
                         <DropdownLink

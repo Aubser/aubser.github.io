@@ -8,18 +8,18 @@ export default function OurTeam() {
    return (
       <>
          <Head>
-            <title>About Us | SkyTech Drones</title>
+            <title>About Us | Driftless Robotics</title>
             <meta
                name="description"
-               content="Learn more about SkyTech Drones, our mission, and our commitment to aerial innovation."
+               content="Learn more about Driftless Robotics, our mission, and our commitment to aerial innovation."
             />
          </Head>
 
-         <main>
-            <section className="relative h-[520px] md:h-[700px] overflow-hidden">
+         <main className="dark:bg-[#1a1a1a]">
+            <section className="relative h-[520px] md:h-[700px] overflow-hidden dark:bg-black shadow-[0_-10px_30px_-15px_rgba(0,0,0,0.3)]">
 
-               {/* Image */}
-               <div className="absolute inset-0 md:right-0 md:left-auto md:w-[65%]">
+               {/* Image (60%) */}
+               <div className="absolute inset-y-0 right-0 w-full md:w-[60%]">
                   <Image
                      src="/OurTeamResources/TeamPhotoHighQual.jpg"
                      alt="Hardworking Team"
@@ -27,35 +27,25 @@ export default function OurTeam() {
                      priority
                      className="object-cover"
                   />
+
+                  {/* Overlay ON TOP OF IMAGE ONLY */}
+                  <div
+                     className="absolute inset-0 pointer-events-none
+                        bg-gradient-to-l from-transparent via-white/10 to-white
+                      dark:via-black/70 dark:to-black"
+                  />
                </div>
 
-               {/* Gradient — desktop only */}
-               <div
-                  className="absolute inset-0 pointer-events-none hidden md:block"
-                  style={{
-                     background: `
-                       linear-gradient(
-                         to right,
-                         white 0%,
-                         white calc(50% - 300px),
-                         rgba(255,255,255,0.9) 50%,
-                         transparent calc(50% + 300px),
-                         transparent 100%
-                       )
-                     `,
-                  }}
-               />
+               {/* Mobile gradient */}
+               <div className="absolute inset-0 md:hidden bg-gradient-to-t from-white/95 dark:from-black/95 to-transparent" />
 
-               {/* Mobile gradient (simpler & vertical) */}
-               <div className="absolute inset-0 md:hidden bg-gradient-to-t from-white/95 to-transparent" />
-
-               {/* Content */}
+               {/* Content (40%) */}
                <div className="relative max-w-8xl mx-auto h-full px-6 md:px-40 flex items-center">
-                  <div className="w-full md:w-[50%]">
-                     <h1 className="text-4xl md:text-5xl font-bold text-black mb-4 md:mb-6">
+                  <div className="w-full md:w-[40%]">
+                     <h1 className="text-4xl md:text-5xl font-bold mb-4 md:mb-6">
                         Our Team
                      </h1>
-                     <p className="text-base md:text-lg text-black/80 leading-relaxed">
+                     <p className="text-base md:text-lg leading-relaxed">
                         Our team is a dedicated group of award-winning engineers, pilots, and innovators
                         committed to delivering precise, reliable drone solutions through collaboration,
                         expertise, and a passion for pushing aerial technology forward.
@@ -70,6 +60,7 @@ export default function OurTeam() {
                body="Our team brings together years of hands-on experience across engineering, aerial operations, and real-world problem solving, enabling us to design and deliver dependable drone solutions tailored to every mission. By combining technical expertise with innovative thinking, we ensure each project meets the highest standards of safety, efficiency, and performance, empowering our clients to achieve their objectives with confidence."
                imageSrc="/OurTeamResources/Experience.jpg"
                imageAlt="Built On Experience"
+               darkMode="dark:bg-gray-800"
             />
 
             <SplitSection
@@ -79,6 +70,7 @@ export default function OurTeam() {
                imageAlt="Team Culture"
                reverse
                bgClassName="bg-green-50"
+               darkMode="dark:bg-green-900"
             />
 
             <ValueBlocks

@@ -20,7 +20,7 @@ export default function Home() {
             <div className="relative max-w-7xl mx-auto px-6 py-70 flex flex-col items-center text-center">
                <h1 className="text-5xl font-bold text-white mb-10 drop-shadow-lg" style={{ fontSize: "60px" }}>Revolutionize the Sky</h1>
                <p className="text-lg text-white/95 drop-shadow-lg" style={{ fontSize: "24px" }}>
-                  Driftless Robotics Drones delivers precision, performance, and reliability.
+                  Driftless Robotics drones delivers precision, performance, and reliability.
                </p>
             </div>
          </section>

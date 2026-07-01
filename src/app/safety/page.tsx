@@ -7,10 +7,10 @@ export default function EnvironmentalCare() {
    return (
       <>
          <Head>
-            <title>Environmental Care | SkyTech Drones</title>
+            <title>Environmental Care | Driftless Robotics</title>
             <meta
                name="description"
-               content="Learn more about SkyTech Drones, our mission, and our commitment to aerial innovation."
+               content="Learn more about Driftless Robotics, our mission, and our commitment to aerial innovation."
             />
          </Head>
 
@@ -51,9 +51,10 @@ export default function EnvironmentalCare() {
                imageSrc="/SafetyPageResources/ExperienceWork.jpg"
                imageAlt="Experience & Preparedness"
                bgClassName="bg-gray-50"
+               darkMode="dark:bg-gray-800"
             />
 
-            <section className="relative max-w-7xl mx-auto p-8 m-20 text-gray-800 leading-relaxed h-[800px] md:h-[800px] flex items-center justify-center">
+            <section className="relative max-w-7xl mx-auto p-8 m-20 leading-relaxed h-[800px] md:h-[800px] flex items-center justify-center">
                <h2 className="absolute -top-13 sm:top-0 xl:top-20 text-3xl lg:text-4xl font-bold mb-4 lg:mb-6">Risk Isn’t Worth It</h2>
 
                <Image
@@ -61,11 +62,19 @@ export default function EnvironmentalCare() {
                   alt="StopSign"
                   width={500}
                   height={600}
-                  className="mx-auto h-[500px] md:h-[500px] w-auto object-contain z-10"
+                  className="mx-auto h-[500px] md:h-[500px] w-auto object-contain z-10 dark:hidden"
+               />
+
+               <Image
+                  src="/SafetyPageResources/StopSign-dark.png"
+                  alt="StopSign"
+                  width={500}
+                  height={600}
+                  className="mx-auto h-[500px] md:h-[500px] w-auto object-contain z-10 hidden dark:block"
                />
 
                <div className="absolute z-20 grid grid-rows-4 grid-cols-1 gap-4 justify-items-center items-center xl:grid-rows-2 xl:grid-cols-2 xl:gap-40">
-                  <div className="p-4 max-w-150 bg-red-50/90 text-center grid col-span-1 row-span-1 row-start-1 xl:col-start-1 xl:text-right xl:leading-relaxed xl:bg-transparent">
+                  <div className="p-4 max-w-150 bg-red-50/90 dark:bg-gray-600/70 text-center grid col-span-1 row-span-1 row-start-1 xl:col-start-1 xl:text-right xl:leading-relaxed xl:bg-transparent dark:xl:bg-transparent">
                      <div>
                         <div
                            className="hidden xl:block"
@@ -89,7 +98,7 @@ export default function EnvironmentalCare() {
                      </div>
                   </div>
 
-                  <div className="p-4 max-w-150 bg-red-50/90 text-center grid col-span-1 row-span-1 xl:row-start-1 xl:col-start-2 xl:text-left xl:leading-relaxed xl:bg-transparent">
+                  <div className="p-4 max-w-150 bg-red-50/90 dark:bg-gray-600/70 text-center grid col-span-1 row-span-1 xl:row-start-1 xl:col-start-2 xl:text-left xl:leading-relaxed xl:bg-transparent dark:xl:bg-transparent">
                      <div>
                         <div
                            className="hidden xl:block"
@@ -113,7 +122,7 @@ export default function EnvironmentalCare() {
                      </div>
                   </div>
 
-                  <div className="p-4 max-w-150 bg-red-50/90 text-center grid col-span-1 row-span-1 xl:row-start-2 xl:col-start-1 xl:text-right xl:leading-relaxed xl:bg-transparent">
+                  <div className="p-4 max-w-150 bg-red-50/90 dark:bg-gray-600/70 text-center grid col-span-1 row-span-1 xl:row-start-2 xl:col-start-1 xl:text-right xl:leading-relaxed xl:bg-transparent dark:xl:bg-transparent">
                      <div>
                         <div
                            className="hidden xl:block"
@@ -137,7 +146,7 @@ export default function EnvironmentalCare() {
                      </div>
                   </div>
 
-                  <div className="p-4 max-w-150 bg-red-50/90 text-center grid col-span-1 row-span-1 xl:row-start-2 xl:col-start-2 xl:text-left xl:leading-relaxed xl:bg-transparent">
+                  <div className="p-4 max-w-150 bg-red-50/90 dark:bg-gray-600/70 text-center grid col-span-1 row-span-1 xl:row-start-2 xl:col-start-2 xl:text-left xl:leading-relaxed xl:bg-transparent dark:xl:bg-transparent">
                      <div>
                         <div
                            className="hidden xl:block"
@@ -168,6 +177,7 @@ export default function EnvironmentalCare() {
                imageSrc="/SafetyPageResources/CommonSense.jpg"
                imageAlt="Safety Starts with Common Sense"
                bgClassName="bg-green-50"
+               darkMode="dark:bg-green-800"
                reverse
             />
 

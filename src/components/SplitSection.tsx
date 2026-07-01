@@ -13,6 +13,7 @@ interface SplitSectionProps {
   imageAlt: string;
   reverse?: boolean;
   bgClassName?: string;
+  darkMode?: string;
 }
 
 function getTransform(
@@ -42,6 +43,7 @@ export default function SplitSection({
   imageAlt,
   reverse = false,
   bgClassName = "",
+  darkMode = ""
 }: SplitSectionProps) {
   const imageRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
@@ -50,7 +52,7 @@ export default function SplitSection({
   const textVisible = useIsVisible(textRef);
 
   return (
-    <section className={`max-w-8xl mx-auto px-6 lg:px-50 py-40 ${bgClassName}`}>
+    <section className={`max-w-8xl mx-auto px-6 lg:px-50 py-40 ${bgClassName} ${darkMode}`}>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
         {/* Image */}
@@ -94,7 +96,7 @@ export default function SplitSection({
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 lg:mb-6">
             {title}
           </h2>
-          <p className="text-base lg:text-lg text-black/80 leading-relaxed">
+          <p className="text-base lg:text-lg leading-relaxed">
             {body}
           </p>
         </div>

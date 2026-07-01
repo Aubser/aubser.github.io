@@ -15,7 +15,7 @@ export default function ValueBlocks({
   values,
 }: ValueBlocksProps) {
   return (
-    <section className="max-w-7xl mx-auto px-30 py-24">
+    <section className="max-w-7xl mx-auto px-30 py-24 dark:bg-[#1a1a1a]">
       <div className="mb-16">
         <h2 className="text-4xl font-bold text-center">{title}</h2>
       </div>

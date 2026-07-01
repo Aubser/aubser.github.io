@@ -13,7 +13,7 @@ export default function ValueItem({ label, imageSrc }: ValueItemProps) {
           src={imageSrc}
           alt={label}
           fill
-          className="object-cover rounded-xl"
+          className="object-cover rounded-xl dark:invert dark:brightness-90"
         />
       </div>
       <p className="text-xl font-semibold">{label}</p>

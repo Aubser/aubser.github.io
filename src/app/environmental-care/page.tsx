@@ -7,10 +7,10 @@ export default function EnvironmentalCare() {
    return (
       <>
          <Head>
-            <title>Environmental Care | SkyTech Drones</title>
+            <title>Environmental Care | Driftless Robotics</title>
             <meta
                name="description"
-               content="Learn more about SkyTech Drones, our mission, and our commitment to aerial innovation."
+               content="Learn more about Driftless Robotics, our mission, and our commitment to aerial innovation."
             />
          </Head>
 
@@ -65,7 +65,7 @@ export default function EnvironmentalCare() {
                <a href="https://www.vecteezy.com/free-videos/plant-growing" className="hidden">Plant Growing Stock Videos by Vecteezy</a>
             </section>
 
-            <section className="relative xl:flex justify-center pt-30 bg-[#f6eee3] text-center pb-40">
+            <section className="relative xl:flex justify-center pt-30 bg-[#f6eee3] dark:bg-[#332421] text-center pb-40">
                <div className="relative w-full max-w-7xl justify-center flex">
                   {/* Image */}
                   <Image
@@ -73,7 +73,15 @@ export default function EnvironmentalCare() {
                      alt="Roots"
                      width={500}
                      height={600}
-                     className="h-[1200px] md:h-[1000px] w-auto object-cover z-10"
+                     className="h-[1200px] md:h-[1000px] w-auto object-cover z-10 dark:hidden"
+                  />
+
+                  <Image
+                     src="/EnvCarePageResources/DeepRoots-dark.png"
+                     alt="Roots"
+                     width={500}
+                     height={600}
+                     className="h-[1200px] md:h-[1000px] w-auto object-cover z-10 hidden dark:block"
                   />
 
                   <h2 className="absolute -top-15 left-1/2 transform -translate-x-1/2 z-20 font-bold text-3xl px-4">
@@ -82,18 +90,18 @@ export default function EnvironmentalCare() {
 
                   <div className="absolute top-10 h-full w-full z-20 pt-5 grid grid-rows-4 grid-cols-1 xl:grid-cols-2 xl:gap-0 gap-35 justify-items-center">
                      <div className="p-4 max-w-96 grid col-span-1 row-span-1 row-start-1 xl:col-start-1  ">
-                        <FadeInBlock direction="left" className="bg-[#f6eee3]/80 max-w-96">
+                        <FadeInBlock direction="left" className="bg-[#f6eee3]/80 dark:bg-[#332421]/80 max-w-96">
                            <h3 className="font-bold mb-2 text-xl">Proper Disposal</h3>
                            <p >
-                              We take responsibility for <strong>every material</strong> we use, from production through end of life. By ensuring <strong>safe</strong>
-                              and <strong>ethical</strong> disposal practices, we <strong>protect</strong> the land, water, and communities around us. Our commitment goes
+                              We take responsibility for <strong>every material</strong> we use, from production through end of life. By ensuring <strong>safe</strong> and <strong>ethical</strong> disposal 
+                              practices, we <strong>protect</strong> the land, water, and communities around us. Our commitment goes
                               beyond compliance—we act with <strong>care for the environment</strong> we all share.
                            </p>
                         </FadeInBlock>
                      </div>
 
                      <div className="p-4 grid col-span-1 row-span-1 row-start-2 xl:col-start-2 max-w-96">
-                        <FadeInBlock direction="right" delayMs={150} className="bg-[#f6eee3]/80 max-w-96">
+                        <FadeInBlock direction="right" delayMs={150} className="bg-[#f6eee3]/80 dark:bg-[#332421]/80 max-w-96">
                            <h3 className="font-bold text-xl mb-2">Additive Manufacturing</h3>
                            <p>
                               We <strong>leverage</strong> additive manufacturing techniques such as <strong>3D printing</strong> to produce components with greater precision and minimal
@@ -104,7 +112,7 @@ export default function EnvironmentalCare() {
                      </div>
 
                      <div className="p-4 grid col-span-1 row-span-1 row-start-3 xl:col-start-1 max-w-96">
-                        <FadeInBlock direction="left" delayMs={150} className="bg-[#f6eee3]/80 max-w-96">
+                        <FadeInBlock direction="left" delayMs={150} className="bg-[#f6eee3]/80 dark:bg-[#332421]/80 max-w-96">
                            <h3 className="font-bold text-xl mb-2">Waste Reduction</h3>
                            <p>
                               We actively <strong>reduce</strong> waste across our operations by <strong>improving</strong> process <strong>efficiency</strong> and minimizing excess material use.
@@ -115,7 +123,7 @@ export default function EnvironmentalCare() {
                      </div>
 
                      <div className="p-4 grid col-span-1 row-span-1 row-start-4 xl:col-start-2 max-w-96">
-                        <FadeInBlock direction="right" delayMs={150} className="bg-[#f6eee3]/80 max-w-96">
+                        <FadeInBlock direction="right" delayMs={150} className="bg-[#f6eee3]/80 dark:bg-[#332421]/80 max-w-96">
                            <h3 className="font-bold text-xl mb-2">Lightweight Product Design</h3>
                            <p>
                               We <strong>engineer</strong> products to be <strong>lighter</strong> without compromising strength, durability, or performance. Using advanced materials

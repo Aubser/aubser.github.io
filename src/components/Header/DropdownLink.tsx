@@ -29,9 +29,9 @@ export default function DropdownLink({ item, index, activeIndex, setActiveIndex 
             href={item.href}
             className={`
                px-4 py-2 inline-flex items-center justify-center h-10
-               rounded-t-md border border-b-0 bg-white relative
+               rounded-t-md border border-b-0  relative
                transition-colors duration-500
-               ${isHovered ? 'border-gray-300 text-green-600 z-30' : 'border-transparent text-black z-10'}
+               ${isHovered ? 'border-gray-300 text-green-600 z-30' : 'border-transparent z-10'}
             `}
          >
             {item.label}
