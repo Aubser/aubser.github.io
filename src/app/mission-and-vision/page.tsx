@@ -38,7 +38,7 @@ export default function MissionAndVision() {
                <SplitSection
                   title="Revolutionize the World"
                   body="At Driftless Robotics, we harness cutting-edge technology to drive progress and transform industries. Our mission is to create innovative solutions that push the boundaries of what’s possible, empowering people and businesses to achieve new heights. By combining imagination with precision engineering, we are shaping a future where technology expands the limits of human potential and opens doors to extraordinary possibilities."
-                  imageSrc="/MissionPageResources/Blueprint.jpg"
+                  imageSrc="/MissionPageResources/MotorShot.jpg"
                   imageAlt="Revolutionize the World"
                   bgClassName="bg-green-50"
                   darkMode="dark:bg-green-900"

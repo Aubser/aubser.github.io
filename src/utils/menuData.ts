@@ -20,6 +20,7 @@ export const menuItems: MenuItem[] = [
       { label: 'Mission & Vision', href: '/mission-and-vision' },
     ],
   },
+  /* Removing as team does not care for it
   {
     label: 'Our Duty',
     href: '/environmental-care',
@@ -28,5 +29,6 @@ export const menuItems: MenuItem[] = [
       { label: 'Safety', href: '/safety' },
     ],
   },
+  */
   { label: 'Contact', href: '/contact' },
 ];

@@ -21,7 +21,7 @@ export default function OurTeam() {
                {/* Image (60%) */}
                <div className="absolute inset-y-0 right-0 w-full md:w-[60%]">
                   <Image
-                     src="/OurTeamResources/TeamPhotoHighQual.jpg"
+                     src="/OurTeamResources/BeautifulSunset.jpg"
                      alt="Hardworking Team"
                      fill
                      priority
@@ -58,7 +58,7 @@ export default function OurTeam() {
             <SplitSection
                title="Built on Experience"
                body="Our team brings together years of hands-on experience across engineering, aerial operations, and real-world problem solving, enabling us to design and deliver dependable drone solutions tailored to every mission. By combining technical expertise with innovative thinking, we ensure each project meets the highest standards of safety, efficiency, and performance, empowering our clients to achieve their objectives with confidence."
-               imageSrc="/OurTeamResources/Experience.jpg"
+               imageSrc="/OurTeamResources/OldManEric.png"
                imageAlt="Built On Experience"
                darkMode="dark:bg-gray-800"
             />
@@ -66,7 +66,7 @@ export default function OurTeam() {
             <SplitSection
                title="Empowered by Culture"
                body="At the heart of our success is a culture that inspires collaboration and innovation. We believe that when our team thrives, our ideas and achievements soar. By nurturing an environment where curiosity, creativity, and mutual support are valued, we empower every team member to contribute their best and drive meaningful impact."
-               imageSrc="/OurTeamResources/CoffeeCulture.jpg"
+               imageSrc="/OurTeamResources/WideShop1.jpg"
                imageAlt="Team Culture"
                reverse
                bgClassName="bg-green-50"
