@@ -56,7 +56,7 @@ export default function MissionAndVision() {
 
             <div className="hidden md:block">
                <ImageRevealOverlay
-                  image="/MissionPageResources/RocketDesktop.jpg"
+                  image="/MissionPageResources/JaybirdV2InFlight_1.1.1.png"
                   leftTitle="Takeoff To"
                   rightTitle="New Heights"
                />

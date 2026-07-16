@@ -16,10 +16,10 @@ export default function OurTeam() {
          </Head>
 
          <main className="dark:bg-[#1a1a1a]">
-            <section className="relative h-[520px] md:h-[700px] overflow-hidden dark:bg-black shadow-[0_-10px_30px_-15px_rgba(0,0,0,0.3)]">
+            <section className="relative h-[520px] md:h-[700px] overflow-hidden">
 
                {/* Image (60%) */}
-               <div className="absolute inset-y-0 right-0 w-full md:w-[60%]">
+               <div className="absolute inset-y-0 right-0 w-full md:w-[100%]">
                   <Image
                      src="/OurTeamResources/BeautifulSunset.jpg"
                      alt="Hardworking Team"
@@ -27,21 +27,14 @@ export default function OurTeam() {
                      priority
                      className="object-cover"
                   />
-
-                  {/* Overlay ON TOP OF IMAGE ONLY */}
-                  <div
-                     className="absolute inset-0 pointer-events-none
-                        bg-gradient-to-l from-transparent via-white/10 to-white
-                      dark:via-black/70 dark:to-black"
-                  />
                </div>
 
                {/* Mobile gradient */}
                <div className="absolute inset-0 md:hidden bg-gradient-to-t from-white/95 dark:from-black/95 to-transparent" />
 
                {/* Content (40%) */}
-               <div className="relative max-w-8xl mx-auto h-full px-6 md:px-40 flex items-center">
-                  <div className="w-full md:w-[40%]">
+               <div className="relative max-w-8xl mx-auto h-full px-6 md:px-23 pb-5 md:pb-20 flex items-end text-white">
+                  <div className="w-full md:w-[55%]">
                      <h1 className="text-4xl md:text-5xl font-bold mb-4 md:mb-6">
                         Our Team
                      </h1>
@@ -60,6 +53,7 @@ export default function OurTeam() {
                body="Our team brings together years of hands-on experience across engineering, aerial operations, and real-world problem solving, enabling us to design and deliver dependable drone solutions tailored to every mission. By combining technical expertise with innovative thinking, we ensure each project meets the highest standards of safety, efficiency, and performance, empowering our clients to achieve their objectives with confidence."
                imageSrc="/OurTeamResources/OldManEric.png"
                imageAlt="Built On Experience"
+               bgClassName="bg-gray-100"
                darkMode="dark:bg-gray-800"
             />
 
@@ -69,7 +63,7 @@ export default function OurTeam() {
                imageSrc="/OurTeamResources/WideShop1.jpg"
                imageAlt="Team Culture"
                reverse
-               bgClassName="bg-green-50"
+               bgClassName="bg-green-100"
                darkMode="dark:bg-green-900"
             />
 

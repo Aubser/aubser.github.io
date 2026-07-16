@@ -30,15 +30,15 @@ export default function ImageRevealOverlay({ image, leftTitle, rightTitle }: Pro
       {/* Sticky container for the overlay section */}
       <div>
         {/* Content grid */}
-        <div className="relative z-20 grid h-full grid-cols-1 md:grid-cols-2 px-6 md:px-20 md:gap-40">
+        <div className="relative z-20 grid h-full grid-cols-1 md:grid-cols-2 px-6 md:px-20 md:gap-150 text-white">
           <div className="flex items-center">
-            <div className="max-w-md text-white">
+            <div className="max-w-md">
               <h3 className="text-4xl font-bold mb-4 italic">{leftTitle}</h3>
             </div>
           </div>
 
           <div className="flex items-center justify-end text-right">
-            <div className="max-w-md text-white">
+            <div className="max-w-md">
               <h3 className="text-4xl font-bold mb-4 italic">{rightTitle}</h3>
             </div>
           </div>

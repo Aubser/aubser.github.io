@@ -20,6 +20,13 @@ export const menuItems: MenuItem[] = [
       { label: 'Mission & Vision', href: '/mission-and-vision' },
     ],
   },
+  {
+    label: 'What We Do',
+    href: '/innovation',
+    dropdown: [
+      {label: 'Innovation', href: '/innovation'}
+    ]
+  },
   /* Removing as team does not care for it
   {
     label: 'Our Duty',

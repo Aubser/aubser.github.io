@@ -4,24 +4,24 @@ import Image from 'next/image';
 
 export default function Logo() {
   return (
-    <Link href="/">
-      {/* Light mode logo */}
+    <Link href="/" className="flex items-end gap-2">
+      {/* Fan icon */}
       <Image
-        src="/logoHorizontal-removebg-preview.png"
-        alt="Explore Our Drones"
-        width={350}
+        src="/driftlessrobotics-logo3-white-nobg-fan.png"
+        alt="Driftless Robotics"
+        width={50}
         height={60}
-        className="h-auto sm:h-24 dark:hidden"
+        className="h-15 w-auto invert dark:invert-0"
         priority
       />
 
-      {/* Dark mode logo */}
+      {/* Text */}
       <Image
-        src="/logo-with-text-white-3.png"
-        alt="Explore Our Drones"
-        width={350}
+        src="/driftlessrobotics-logo3-white-nobg-text.png"
+        alt="Driftless Robotics Inc."
+        width={120}
         height={60}
-        className="h-auto sm:h-24 hidden dark:block"
+        className="h-12 w-auto invert dark:invert-0"
         priority
       />
     </Link>

@@ -13,14 +13,14 @@ export default function Header() {
 
    return (
       <header className="shadow bg-white dark:bg-gray-800 z-20">
-         <div className="max-w-7xl mx-auto">
+         <div className="max-w-8xl mx-auto">
             <div className="flex justify-between items-center h-20 px-4">
 
                {/* Logo */}
                <Logo />
 
                {/* Desktop Navigation */}
-               <nav className="hidden md:flex space-x-8 text-xl items-center">
+               <nav className="hidden md:flex flex-nowrap space-x-8 text-xl items-center h-10">
                   {menuItems.map((item, idx) =>
                      item.dropdown ? (
                         <DropdownLink
@@ -31,7 +31,7 @@ export default function Header() {
                            setActiveIndex={setActiveDropdown}
                         />
                      ) : (
-                        <Link key={idx} href={item.href} className="hover:text-green-600">
+                        <Link key={idx} href={item.href} className="hover:text-green-600 whitespace-nowrap">
                            {item.label}
                         </Link>
                      )

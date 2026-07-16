@@ -7,7 +7,7 @@ export const metadata = {
    title: 'Driftless Robotics',
    description: 'Cutting-edge drones for industry, security, and exploration.',
    icons: {
-      icon: '/logo.png',
+      icon: '/driftlessrobotics-logo3-black-fan.png',
    },
 };
 
